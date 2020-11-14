@@ -2,13 +2,13 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import { StyleSheet, Text, View, Button} from 'react-native';
 
-const HomeScreen = ({ navigation }) => {
+const DetailScreen = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
+      <Text>Detail Screen</Text>
       <Button
-        title="Go to About"
-        onPress={() => navigation.navigate("About")}
+        title="Go to Home"
+        onPress={() => navigation.navigate("Home")}
       />
     </View>
   );
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default DetailScreen;
