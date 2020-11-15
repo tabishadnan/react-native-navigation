@@ -6,9 +6,9 @@ const DetailScreen = ({ navigation, route }) => {
 
   return (
     <View style={styles.container}>
-      <Text>{route.params.name}</Text>
+      <Text>{route.params.counter}</Text>
       <Button
-        title="Change Header Name"
+        title="Change Header Name" 
         onPress={() => navigation.setOptions({ title: route.params.name })}
       />
     </View>
